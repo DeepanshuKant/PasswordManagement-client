@@ -1,0 +1,396 @@
+/* List CSS */
+.main__outer__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 10px;
+    position: relative;
+}
+
+
+/* AllLists CSS */
+.lists__main__parent {
+    padding: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+
+.list__parent__box {
+    background-color: #172a46;
+    border-radius: 10px;
+    width: 24%;
+    padding: 2em;
+    text-align: left;
+    line-height: 1.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    position: relative;
+    transition: all .2s ease-in;
+    overflow: hidden;
+}
+
+.secret__modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 300px;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    background-color: #1ea54c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    padding: 2rem;
+    transition: all .1s ease;
+    z-index: 10;
+}
+
+
+
+.secret__modal span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.secret__modal p {
+    background-color: orange;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.secret__modal__changed {
+    visibility: visible;
+    transition: all .1s ease;
+}
+
+.secret__modal input[type="password"] {
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    border: none;
+    background-color: #172a46;
+}
+
+
+.secret__modal button {
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(27, 26, 26, 0.249);
+    display: none;
+    transition: all .1s ease;
+}
+
+.overlay__changed {
+    display: block;
+    transition: all .1s ease;
+}
+
+
+
+.list__parent__box:hover {
+    transform: translateY(-5px);
+    transition: all .2s ease-in;
+    box-shadow: 0 2px 10px 0px #172a46;
+}
+
+
+.list__title {
+    font-size: 1vw;
+    width: 100%;
+    /* min-height: 50px; */
+    margin: 2em 0 2em 0;
+    color: #fefefe;
+    padding: 2px;
+    word-wrap: break-word;
+}
+
+.list__title span {
+    font-size: .8em;
+    color: rgba(255, 255, 255, 0.477);
+}
+
+.pass_field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 3px;
+    background-color: rgba(128, 128, 128, 0.342);
+    padding: 0 7px 0 7px;
+}
+
+.pass_field span {
+    cursor: pointer;
+    color: white;
+}
+
+.list__desc {
+    color: rgba(0, 0, 0, 0.712);
+    border-right: 1px solid white;
+    user-select: none;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-grow: 1;
+    word-wrap: break-word;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.list__created {
+    margin-top: 20px;
+    font-size: .6em;
+    color: white;
+
+}
+
+.google {
+    color: white;
+    background-color: green;
+    border: .2px solid rgba(54, 223, 7, 0.245);
+    display: flex;
+    align-items: center;
+    padding: .2em;
+    font-size: 1em;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+
+.facebook {
+    color: white;
+    background-color: rgb(75, 75, 255);
+    border: .2px solid rgba(75, 75, 255, 0.642);
+    display: flex;
+    align-items: center;
+    padding: .2em;
+    font-size: 1em;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.instagram {
+    color: white;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    border: .2px solid rgba(255, 0, 0, 0.245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: .2em;
+}
+
+.list__delete {
+    outline: none;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 1em 1.2em;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #1ea54c;
+    color: white;
+}
+
+.list__edit {
+    cursor: pointer;
+    font-size: 20px;
+    transition: color .2s ease-in;
+    margin-top: 3px;
+}
+
+.list__edit:hover {
+    color: rgb(107, 43, 255);
+}
+
+
+/* CreateList CSS */
+.create__list__parent {
+    width: 30%;
+    color: white;
+    margin-top: 17px;
+
+    /* position: fixed;
+    top: 0;
+    right: 0; */
+
+}
+
+.create__list {
+    /* border: .2px solid rgba(255, 255, 255, 0.363); */
+    background-color: #172a46;
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.create__list>form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.create__list>form>input {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #0a192f;
+    border-radius: 10px;
+    color: #1ea54c;
+    outline: none;
+    border: .2px solid rgba(0, 0, 0, 0.245);
+}
+
+.create__list>form>div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.create__list>form>div>select {
+    background-color: #0a192f;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+    border: .2px solid rgba(0, 0, 0, 0.245);
+    padding: .5em 1em;
+}
+
+
+.create__list>form>button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #1ea54c;
+    color: white;
+    padding: 1em 2em;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Edit List card */
+.edit__list__parent {
+    color: white;
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    background: linear-gradient(to right, #7F00FF, #E100FF);
+    border-radius: 10px;
+    transform: translate(-50%, -30%);
+    z-index: 20;
+    display: none;
+    /* opacity: 0; */
+}
+
+.edit__list__parent__changed {
+    display: block;
+}
+
+.edit__list {
+    background: linear-gradient(to right, #7F00FF, #E100FF);
+    border-radius: 10px;
+    border: none;
+}
+
+.empty__div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    background: rgba(27, 27, 27, 0.813);
+    z-index: 18;
+}
+
+/* Mediq Query for mobile */
+
+@media only screen and (max-width: 600px) {
+    .main__outer__box {
+        flex-direction: column-reverse;
+    }
+
+    .create__list__parent {
+        width: 100%;
+    }
+
+    .lists__main__parent {
+        padding: 1em;
+        width: 100%;
+    }
+
+    .secret__modal {
+        width: 90%;
+    }
+
+    .list__parent__box {
+        border: .2px solid rgba(0, 0, 0, 0.245);
+        width: 100%;
+        padding: .5em;
+    }
+
+    .list__title {
+        font-size: 1rem;
+        min-height: 20px;
+    }
+
+    .list__desc {
+        font-size: .9rem;
+        min-height: 20px;
+    }
+
+    .list__created {
+        font-size: .5rem;
+    }
+
+    .low {
+        font-size: .8em;
+    }
+
+    .medium {
+        font-size: .8em;
+    }
+
+    .red {
+        font-size: .8em;
+    }
+}

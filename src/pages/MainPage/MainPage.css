@@ -1,0 +1,36 @@
+.main__page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background: rgba(255, 255, 255, 0.215); */
+    background-color: #172a46;
+    margin-top: 8em;
+}
+
+.buttons {
+    /* border-top: .2px solid rgba(255, 255, 255, 0.363);
+    border-bottom: .2px solid rgba(255, 255, 255, 0.363); */
+    width: 100%;
+    padding: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons>button {
+    margin: 1em;
+    padding: 1em;
+    border: none;
+    border-radius: 3px;
+    background-color: #1ea54c;
+    /* box-shadow: 0 2px 7px rgb(107, 43, 255); */
+    color: white;
+    width: 200px;
+    outline: none;
+    font-weight: light;
+    letter-spacing: 1.2px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
