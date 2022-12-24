@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
-import axios from 'axios'
 import './Register.css'
 
 import { useDispatch, useSelector } from 'react-redux'
@@ -46,7 +45,7 @@ const Register = () => {
             navigate('/login')
         }
 
-    }, [dispatch, reduxStore.error, alert, navigate, reduxStore.isAuthenticated])
+    }, [dispatch, reduxStore.error, navigate, reduxStore.isAuthenticated])
 
     return (
         <>

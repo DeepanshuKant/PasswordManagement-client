@@ -8,6 +8,7 @@ import { getLists } from '../../redux/reducers/listReducer/list.action'
 import './List.css'
 
 let CryptoJS = require("crypto-js");
+// let CryptoJS = require("crypto-es");
 
 const CreateList = () => {
 

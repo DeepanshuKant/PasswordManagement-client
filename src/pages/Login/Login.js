@@ -40,7 +40,7 @@ const Login = () => {
         }
 
 
-    }, [dispatch, reduxStore.error, alert, navigate, reduxStore.isAuthenticated])
+    }, [dispatch, reduxStore.error, navigate, reduxStore.isAuthenticated])
 
     return (
         <>

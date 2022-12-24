@@ -11,6 +11,7 @@ import { useDispatch, useSelector } from 'react-redux'
 
 import './List.css'
 let CryptoJS = require("crypto-js");
+// let CryptoJS = require("crypto-es");
 const AllLists = ({ lists }) => {
 
     const [isModelShow, setIsModelShow] = useState(false);
