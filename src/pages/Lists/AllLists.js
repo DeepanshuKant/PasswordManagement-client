@@ -91,31 +91,6 @@ const AllLists = ({ lists }) => {
 
     }
 
-    // if (chances === 0) {
-    //     Swal.fire({
-    //         icon: 'error',
-    //         title: 'You have exceeded the chances',
-    //     })
-
-    //     const userResp = axios.delete(`http://localhost:4000/api/v1/user/delete/${userReducer.user.user._id}`)
-    //     // const userResp = axios.delete(`http://localhost:4000/api/v1/user/delete/${"sadasdsd"}`)
-
-    //     userResp.then((res) => {
-    //         return res.data;
-    //     })
-    //         .then((data) => {
-    //             if (data.success) {
-    //                 localStorage.clear();
-    //                 window.location.href = '/'
-    //             }
-    //         })
-
-    //     setIsModelShow(false);
-    //     setIsOverlayShow(false);
-    //     setChances(3);
-
-    // }
-
 
 
     //To close the model
